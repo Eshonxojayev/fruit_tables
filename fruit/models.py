@@ -11,15 +11,15 @@ class Fruit(models.Model):
     def __str__(self):
         return f"{self.title}"
 
-class Customers(models.Model):
-    ROLE = (
-        ("client", "C"))
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
-    role = models.CharField(max_length=20, choices=ROLE, default="C")
-
-    def __str__(self):
-        return f"{self.first_name} {self.last_name}"
+# class Customers(models.Model):
+#     ROLE = (
+#         ("client", "C"))
+#     first_name = models.CharField(max_length=50)
+#     last_name = models.CharField(max_length=50)
+#     role = models.CharField(max_length=20, choices=ROLE, default="C")
+#
+#     def __str__(self):
+#         return f"{self.first_name} {self.last_name}"
 
 
 # class FruitFarmer(models.Model):
