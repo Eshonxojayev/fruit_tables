@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Fruit Detail</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <img src="{{ fruit.image.url }}" alt=""> <br> <br>
+        <label for="title">Title</label>
+        <input type="text" id="title" value="{{ fruit.title }}" name="title"> <br> <br>
+
+        <label for="description">Description</label>
+        <input type="text" id="description" value="{{ fruit.description }}" name="description"> <br> <br>
+
+        <label for="price">Price</label>
+        <input type="text" id="price" value="{{ fruit.price }}" name="price"> <br> <br>
+
+        <label for="count">Count</label>
+        <input type="text" id="count" value="{{ fruit.count }}" name="count"> <br> <br>
+
+        <label for="image">Image</label>
+        <input type="file" id="image" name="image"> <br> <br>
+
+        <button type="submit">Settings</button>
+    </form>
+</body>
+</html>
